@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luna & Sol | Breakfast & Lunch</title>
+
+<meta name="description" content="Luna & Sol Breakfast & Lunch - A family-owned breakfast & lunch spot serving fresh Mexican-inspired dishes and classic American comfort food in a cozy environment.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold: #F4B942;
+  --brown: #3E2723;
+  --cream: #FFF8E7;
+  --orange: #D96C3B;
+  --blue: #6FA8DC;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+header {
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+  border-radius: 8px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: var(--gold);
+}
+
+.hero h1 { font-size: 2.6em; }
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 22px;
+  background: var(--orange);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.secondary { background: var(--blue); }
+
+/* SECTIONS */
+.section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.menu-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.menu-card p {
+  font-weight: 600;
+}
+
+/* CTA */
+.cta-strip {
+  background: var(--orange);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--brown);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+/* CALL BUTTON */
+.call-fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: var(--orange);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* MAP */
+.map {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/469981331_122129328266565057_5719384820637659074_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=HgZkYVN4L_8Q7kNvwH1LUdn&_nc_oc=AdoneVJ8J0SIpHQQ_ND0mzusXvLUuKTzqgXxdzLK_Mv4eDr4XH4eYiliaaBkdO5hXWk&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=-FIV1_uXzepG61b9_RjYEg&_nc_ss=7b289&oh=00_Af2uagD2NlwHO2yijJMu7Ev4Ur3NyMe7vPTw-C42chQqtw&oe=69F688FD" alt="Luna & Sol Logo" class="logo">
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#favorites">Customer favorites</a>
+    <a href="#menu-items">Menu</a>
+    <a href="#thoughts">Customer Thoughts</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Fresh Breakfast. Real Flavor. Every Day.</h1>
+  <p>We are a cozy, family-owned breakfast & lunch restaurant in Indianapolis. Come visit us today!</p>
+
+  <a href="#menu" class="btn">View Menu</a>
+  <a href="#visit" class="btn secondary">Find Us</a>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>
+    We are family-owned restaurant serving fresh Mexican-inspired dishes
+    and classic American comfort food in a cozy environment. We offer breakfast and lunch as well as the pleasure of enjoying the best food in Indianapolis!
+  </p>
+</section>
+
+<!-- CUSTOMER FAVORITES -->
+<section class="section" id="favorites">
+  <h2>Customer Favorites</h2>
+
+  <div class="cards">
+    <div class="card"> <b>Chilaquiles</b><br>Fresh salsa & crispy tortilla chips</div>
+    <div class="card"> <b>Country Skillet</b><br>Hearty breakfast classic</div>
+    <div class="card"> <b>Cinnamon Pancakes</b><br>Sweet & fluffy favorite</div>
+    <div class="card"> <b>Breakfast Tortas</b><br>Fresh Mexican sandwiches</div>
+  </div>
+</section>
+
+<section class="section" id="menu-items">
+
+  <h2>Menu Items</h2>
+
+  <div class="menu-grid">
+
+    <!-- Sandwiches -->
+    <div class="menu-card">
+      <p><strong>Sandwiches</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>BLT</li>
+        <li>Hot Pastrami</li>
+        <li>Cheesy Beef</li>
+        <li>Grilled Chicken Sandwich</li>
+        <li>Reuben Sandwich</li>
+        <li>Club Sandwich</li>
+        <li>Cheeseburger</li>
+        <li>Philly Cheesesteak</li>
+        <li>Jalapeño Cheeseburger</li>
+        <li>Hamburger</li>
+        <li>Chicken Salad Croissant</li>
+        <li>Tuna Melt</li>
+        <li>Grilled Ham &amp; Cheese</li>
+        <li>Patty Melt</li>
+      </ul>
+    </div>
+
+    <!-- Kids Meals -->
+    <div class="menu-card">
+      <p><strong>Kids Meals</strong></p>
+      <p style="font-size: 0.85em;">Includes fries & drink</p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>Hamburger</li>
+        <li>Cheeseburger</li>
+        <li>Hot Dog</li>
+        <li>Corn Dog</li>
+        <li>Chicken Strips</li>
+        <li>Grilled Cheese</li>
+        <li>Mac &amp; Cheese</li>
+      </ul>
+    </div>
+
+    <!-- Sides -->
+    <div class="menu-card">
+      <p><strong>Sides</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>French Fries</li>
+        <li>Onion Rings</li>
+        <li>Tater Tots</li>
+        <li>Chips</li>
+        <li>Mozzarella Sticks</li>
+        <li>Fried Mushrooms</li>
+        <li>Chili Cheese Fries</li>
+        <li>Side Salad</li>
+      </ul>
+    </div>
+
+    <!-- SKILLETS -->
+    <div class="menu-card">
+      <p><strong>Skillets</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>Country Skillet</li>
+        <li>Meat Lovers Skillet</li>
+        <li>Veggie Skillet</li>
+        <li>Mexican Skillet</li>
+        <li>Chorizo Skillet</li>
+        <li>Steak Skillet</li>
+      </ul>
+    </div>
+
+    <!-- OMELETS -->
+    <div class="menu-card">
+      <p><strong>Omelets</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>Meat Lovers Omelet</li>
+        <li>Philly Omelet</li>
+        <li>Ham & Cheese Omelet</li>
+        <li>Veggie Omelet</li>
+        <li>Chorizo Omelet</li>
+        <li>Mexican Omelet</li>
+        <li>Taco Omelet</li>
+        <li>Denver Omelet</li>
+        <li>Cheese Omelet</li>
+      </ul>
+    </div>
+
+    <!-- MEXICAN DISHES -->
+    <div class="menu-card">
+      <p><strong>Mexican Dishes</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>Chilaquiles Verdes</li>
+        <li>Chilaquiles Rojos</li>
+        <li>Huevos Rancheros</li>
+        <li>Breakfast Burrito</li>
+        <li>Carne Asada Burrito</li>
+        <li>Chorizo Con Huevo Burrito</li>
+      </ul>
+    </div>
+
+    <!-- BREAKFAST SANDWICHES -->
+    <div class="menu-card">
+      <p><strong>Breakfast Sandwiches</strong></p>
+      <ul style="text-align:left; padding: 0 20px 20px;">
+        <li>Bacon, Egg & Cheese</li>
+        <li>Sausage, Egg & Cheese</li>
+        <li>Ham, Egg & Cheese</li>
+        <li>Egg & Cheese</li>
+      </ul>
+  </div>
+
+
+  <!-- COMBO MEALS -->
+  <div class="menu-card">
+    <p><strong>Combo Meals</strong></p>
+    <ul style="text-align:left; padding: 0 20px 20px;">
+      <li>Taco Meal</li>
+      <li>Burger Meal</li>
+      <li>Breakfast Meal</li>
+      <li>Pancake Combo</li>
+      <li>French Toast Combo</li>
+      <li>Omelette Meal</li>
+      <li>Chicken &amp; Waffles</li>
+      <li>Country Fried Steak</li>
+      <li>Corned Beef Hash</li>
+    </ul>
+  </div>
+
+  <!-- WAFFLES -->
+  <div class="menu-card">
+    <p><strong>Waffles</strong></p>
+    <ul style="text-align:left; padding: 0 20px 20px;">
+      <li>Maple Bacon</li>
+      <li>Nutella Banana</li>
+      <li>Strawberry Shortcake</li>
+      <li>Classic Waffle</li>
+    </ul>
+  </div>
+
+  <!-- PANCAKES -->
+  <div class="menu-card">
+    <p><strong>Pancakes</strong></p>
+    <ul style="text-align:left; padding: 0 20px 20px;">
+      <li>Banana Cream</li>
+      <li>Blueberry</li>
+      <li>Chocolate Chip</li>
+      <li>Strawberry</li>
+      <li>Buttermilk</li>
+    </ul>
+  </div>
+
+  <!-- FRENCH TOAST -->
+  <div class="menu-card">
+    <p><strong>French Toast</strong></p>
+    <ul style="text-align:left; padding: 0 20px 20px;">
+      <li>Classic French Toast</li>
+      <li>Stuffed French Toast</li>
+    </ul>
+  </div>
+
+  </div>
+</section>
+
+<section class="section" id="thoughts">
+  <h2>What Customers Are Saying</h2>
+  <div class="cards">
+    <div class="card"> “5 Stars-Everything tastes fresh and authentic.”</div>
+    <div class="card"> “5 Stars-Best pancakes in town.”</div>
+    <div class="card"> “4.8 Stars-Amazing chilaquiles.”</div>
+  </div>
+</section>
+
+<section class="section" id="visit">
+  <h2>Visit Us</h2>
+  <p>📍 36 E Troy Ave, Indianapolis, IN</p>
+
+  <iframe class="map"
+    src="https://www.google.com/maps?q=39.7226507,-86.1574742&z=17&output=embed">
+  </iframe>
+</section>
+
+<section class="cta-strip" id="contact">
+  <h2>Call Us Today</h2>
+  <p>Place an order or ask about our menu</p>
+  <a href="tel:+13179565903" class="btn">+1 (317) 956-5903</a>
+</section>
+
+<div class="footer">
+  © 2026 Luna & Sol Breakfast & Lunch
+</div>
+
+<a href="tel:+13179565903" class="call-fixed">Call</a>
+
+</body>
+</html>
